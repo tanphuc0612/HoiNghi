@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.ThemHoiNghiController">
+   <children>
+      <Text layoutX="204.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thêm hội nghị">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="86.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên hội nghị:" />
+      <TextField fx:id="ten" layoutX="198.0" layoutY="65.0" prefHeight="31.0" prefWidth="218.0" />
+      <Text layoutX="86.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mã địa điểm:" />
+      <Text layoutX="86.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mô tả ngắn:" />
+      <TextField fx:id="ngan" layoutX="198.0" layoutY="152.0" prefHeight="31.0" prefWidth="218.0" />
+      <Text layoutX="86.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mô tả chi tiết:" />
+      <TextField fx:id="chi_tiet" layoutX="198.0" layoutY="195.0" prefHeight="31.0" prefWidth="218.0" />
+      <Text layoutX="86.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian:" />
+      <DatePicker fx:id="time" layoutX="198.0" layoutY="241.0" />
+      <Button fx:id="them" layoutX="249.0" layoutY="352.0" mnemonicParsing="false" text="Thêm" />
+      <Button fx:id="home" layoutX="325.0" layoutY="352.0" mnemonicParsing="false" text="Home" />
+      <ComboBox fx:id="ma" layoutX="198.0" layoutY="109.0" prefHeight="31.0" prefWidth="218.0" />
+      <Button fx:id="anh" layoutX="198.0" layoutY="287.0" mnemonicParsing="false" text="Thêm ảnh" />
+      <Text layoutX="86.0" layoutY="308.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ảnh:" />
+      <Label fx:id="link" layoutX="307.0" layoutY="291.0" />
+   </children>
+</AnchorPane>

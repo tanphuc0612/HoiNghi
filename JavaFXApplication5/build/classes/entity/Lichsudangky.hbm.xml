@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 9, 2020 4:09:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Lichsudangky" table="lichsudangky" catalog="ungdung" optimistic-lock="version">
+        <composite-id name="id" class="entity.LichsudangkyId">
+            <key-property name="userName" type="string">
+                <column name="UserName" />
+            </key-property>
+            <key-property name="maHoiNghi" type="int">
+                <column name="MaHoiNghi" />
+            </key-property>
+        </composite-id>
+        <property name="ngayDangKy" type="date">
+            <column name="NgayDangKy" length="10" />
+        </property>
+        <property name="trangThai" type="string">
+            <column name="TrangThai" />
+        </property>
+    </class>
+</hibernate-mapping>

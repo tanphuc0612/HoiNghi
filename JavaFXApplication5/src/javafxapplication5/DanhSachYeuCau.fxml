@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="708.0" maxWidth="1046.0" minHeight="525.0" minWidth="775" prefHeight="525.0" prefWidth="1046.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.DanhSachYeuCauController">
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="760.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="481.0" prefWidth="1046.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" prefHeight="341.0" prefWidth="1046.0">
+               <columns>
+                  <TableColumn fx:id="table_ma" prefWidth="101.0" text="Mã hội nghị" />
+                  <TableColumn fx:id="table_ten" prefWidth="248.0" text="Tên hội nghị" />
+                  <TableColumn fx:id="table_ngay" prefWidth="157.0" text="Ngày đăng kí" />
+                  <TableColumn fx:id="table_dia_diem" minWidth="5.0" prefWidth="282.0" text="Địa điểm" />
+                  <TableColumn fx:id="table_username" prefWidth="163.0" text="username" />
+                  <TableColumn fx:id="table_cho" prefWidth="94.0" text="Chỗ trống" />
+               </columns>
+            </TableView>
+            <Button fx:id="yes" layoutX="425.0" layoutY="374.0" mnemonicParsing="false" text="Chấp nhận" />
+            <Button fx:id="no" layoutX="532.0" layoutY="374.0" mnemonicParsing="false" text="Từ chối" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="506.0" layoutY="27.0" />
+            <Button fx:id="home" layoutX="956.0" layoutY="22.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

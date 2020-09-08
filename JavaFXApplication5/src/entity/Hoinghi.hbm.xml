@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 9, 2020 4:09:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Hoinghi" table="hoinghi" catalog="ungdung" optimistic-lock="version">
+        <id name="maHoiNghi" type="java.lang.Integer">
+            <column name="MaHoiNghi" />
+            <generator class="identity" />
+        </id>
+        <property name="ten" type="string">
+            <column name="Ten" not-null="true" />
+        </property>
+        <property name="moTaNgan" type="string">
+            <column name="MoTaNgan" />
+        </property>
+        <property name="moTaChiTiet" type="string">
+            <column name="MoTaChiTiet" />
+        </property>
+        <property name="anh" type="string">
+            <column name="Anh" />
+        </property>
+        <property name="nguoiThamDu" type="java.lang.Integer">
+            <column name="NguoiThamDu" />
+        </property>
+        <set name="tochucs" table="tochuc" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="MaHoiNghi" not-null="true" />
+            </key>
+            <one-to-many class="entity.Tochuc" />
+        </set>
+    </class>
+</hibernate-mapping>

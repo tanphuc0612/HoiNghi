@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="708.0" maxWidth="1046.0" minHeight="515.0" minWidth="775" prefHeight="683.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.DanhSachUserController">
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="760.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="458.0" prefWidth="856.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="table" prefHeight="331.0" prefWidth="801.0">
+               <columns>
+                  <TableColumn fx:id="userName" prefWidth="165.0" text="Username" />
+                  <TableColumn fx:id="tenUser" prefWidth="266.0" text="Tên" />
+                  <TableColumn fx:id="email" minWidth="5.0" prefWidth="265.0" text="Email" />
+                  <TableColumn fx:id="tinhTrang" prefWidth="104.0" text="Trạng thái" />
+               </columns>
+            </TableView>
+            <Button fx:id="cam" layoutX="544.0" layoutY="419.0" mnemonicParsing="false" text="Cấm" />
+            <TextField fx:id="ten_text" layoutX="123.0" layoutY="362.0" />
+            <Button fx:id="search" layoutX="606.0" layoutY="418.0" mnemonicParsing="false" text="Search" />
+            <Text layoutX="44.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên:" />
+            <Text layoutX="44.0" layoutY="440.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+            <Text layoutX="44.0" layoutY="490.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+            <TextField fx:id="email_text" layoutX="123.0" layoutY="418.0" />
+            <TextField fx:id="username_text" layoutX="123.0" layoutY="469.0" />
+            <Button fx:id="bo_cam" layoutX="461.0" layoutY="419.0" mnemonicParsing="false" text="Bỏ cấm" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="506.0" layoutY="27.0" />
+            <Button fx:id="home" layoutX="718.0" layoutY="25.0" mnemonicParsing="false" text="Home" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

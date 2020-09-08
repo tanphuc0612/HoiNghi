@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="javafxapplication5.UserHoSoController">
+   <children>
+      <Label layoutX="255.0" layoutY="25.0" text="HỒ SƠ">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Text layoutX="101.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" />
+      <Text layoutX="101.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password:" />
+      <Text layoutX="101.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ tên:" />
+      <Text layoutX="101.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:" />
+      <Label fx:id="username" layoutX="192.0" layoutY="80.0" text="Label" />
+      <Label fx:id="pass" layoutX="192.0" layoutY="123.0" text="Label" />
+      <Label fx:id="ten" layoutX="192.0" layoutY="158.0" text="Label" />
+      <Label fx:id="email" layoutX="192.0" layoutY="200.0" text="Label" />
+      <Button fx:id="home" layoutX="149.0" layoutY="280.0" mnemonicParsing="false" text="Home" />
+      <Button fx:id="chinh_sua" layoutX="268.0" layoutY="280.0" mnemonicParsing="false" text="Chỉnh sử hồ sơ" />
+   </children>
+</AnchorPane>

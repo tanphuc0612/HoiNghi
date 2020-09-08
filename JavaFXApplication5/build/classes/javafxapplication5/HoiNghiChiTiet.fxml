@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="786.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXMLController">
+   <children>
+      <Pane layoutX="131.0" layoutY="61.0" prefHeight="167.0" prefWidth="200.0" />
+      <Button fx:id="dang_ky" layoutX="701.0" layoutY="30.0" mnemonicParsing="false" text="Đăng ký" />
+      <Button fx:id="danh_sach" layoutX="439.0" layoutY="30.0" mnemonicParsing="false" text="Danh sách hội nghị" />
+      <Button fx:id="dang_nhap" layoutX="598.0" layoutY="30.0" mnemonicParsing="false" text="Đăng nhập" />
+      <Label fx:id="ten" layoutX="400.0" layoutY="134.0" text="ten" />
+      <Label fx:id="ma" layoutX="400.0" layoutY="91.0" text="ma" />
+      <Label fx:id="dia_diem" layoutX="400.0" layoutY="190.0" text="dia diem" />
+      <Label fx:id="time" layoutX="400.0" layoutY="260.0" text="thoi gian" />
+      <Label fx:id="mo_ta" layoutX="401.0" layoutY="339.0" text="mo ta chi tiet" />
+      <Button fx:id="dang_ky_tham_gia" layoutX="333.0" layoutY="730.0" mnemonicParsing="false" text="Đăng ký tham gia" />
+      <Label fx:id="so_luong" layoutX="401.0" layoutY="304.0" text="so luong" />
+      <ImageView fx:id="anh" fitHeight="305.0" fitWidth="348.0" layoutX="14.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="table" layoutX="3.0" layoutY="496.0" prefHeight="200.0" prefWidth="849.0">
+        <columns>
+          <TableColumn fx:id="table_ma" prefWidth="178.0" text="STT" />
+          <TableColumn fx:id="table_ten" prefWidth="215.0" text="Username" />
+            <TableColumn fx:id="table_ngay" prefWidth="231.0" text="Thời gian đăng ký" />
+            <TableColumn fx:id="table_dia_diem" prefWidth="224.0" text="Trạng thái" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

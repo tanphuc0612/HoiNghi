@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="649.0" maxWidth="800.0" minHeight="617" minWidth="775" prefHeight="649.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.UserHomeController">
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="760.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <Pane prefHeight="543.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="user_table" prefHeight="500.0" prefWidth="800.0">
+               <columns>
+                  <TableColumn fx:id="table_ma" prefWidth="146.0" text="Mã hội nghị" />
+                  <TableColumn fx:id="table_ten" prefWidth="164.0" text="Tên hội nghị" />
+                  <TableColumn fx:id="table_MoTa" prefWidth="489.0" text="mô tả" />
+               </columns>
+            </TableView>
+            <Button fx:id="user_search" layoutX="348.0" layoutY="518.0" mnemonicParsing="false" text="search" />
+         </children>
+      </Pane>
+   </center>
+   <top>
+      <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="506.0" layoutY="27.0" />
+            <Button layoutX="687.0" layoutY="25.0" mnemonicParsing="false" text="Xem hồ sơ" fx:id="xem_ho_so" />
+            <Button fx:id="chinh_sua" layoutX="557.0" layoutY="25.0" mnemonicParsing="false" text="Chỉnh sử hồ sơ" />
+            <Label fx:id="user_home_name" layoutX="35.0" layoutY="30.0" text="username" />
+            <Button fx:id="lich_su" layoutX="448.0" layoutY="25.0" mnemonicParsing="false" text="Xem lịch sử" />
+            <Button layoutX="350.0" layoutY="25.0" mnemonicParsing="false" text="Đăng xuất" fx:id="dang_xuat" />
+         </children>
+      </Pane>
+   </top>
+</BorderPane>

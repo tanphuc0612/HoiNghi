@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="649.0" maxWidth="800.0" minHeight="617" minWidth="775" prefHeight="649.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXMLDocumentController">
+   <top>
+      <Pane prefHeight="80.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="506.0" layoutY="27.0" />
+            <Button fx:id="main_dangNhap" layoutX="596.0" layoutY="22.0" mnemonicParsing="false" text="Đăng nhập" />
+            <Button fx:id="main_dangKy" layoutX="704.0" layoutY="22.0" mnemonicParsing="false" text="Đăng ký" />
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="543.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="main_table" prefHeight="500.0" prefWidth="800.0">
+              <columns>
+                <TableColumn fx:id="table_ma" prefWidth="146.0" text="Mã hội nghị" />
+                <TableColumn fx:id="table_ten" prefWidth="164.0" text="Tên hội nghị" />
+                  <TableColumn fx:id="table_MoTa" prefWidth="489.0" text="mô tả" />
+              </columns>
+            </TableView>
+            <Button fx:id="main_search" layoutX="348.0" layoutY="518.0" mnemonicParsing="false" text="search" />
+         </children>
+      </Pane>
+   </center>
+   <bottom>
+      <Pane prefHeight="0.0" prefWidth="760.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

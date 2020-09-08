@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="420.0" prefWidth="794.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.SuaHoiNghiController">
+   <children>
+      <Text layoutX="217.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa hội nghị">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text layoutX="90.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên hội nghị" />
+      <Text layoutX="90.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mô tả ngắn" />
+      <Text layoutX="87.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mô tả chi tiết" />
+      <Text layoutX="90.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="mã địa điểm" />
+      <TextField fx:id="ten" layoutX="207.0" layoutY="62.0" />
+      <TextField fx:id="ngan" layoutX="207.0" layoutY="104.0" />
+      <TextField fx:id="chi_tiet" layoutX="207.0" layoutY="151.0" />
+      <Text layoutX="87.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thời gian" />
+      <Button fx:id="sua" layoutX="204.0" layoutY="358.0" mnemonicParsing="false" text="Sửa " />
+      <Button fx:id="home" layoutX="270.0" layoutY="358.0" mnemonicParsing="false" text="Home" />
+      <Label fx:id="ten_cu" layoutX="418.0" layoutY="67.0" text="Label" />
+      <Label fx:id="ngan_cu" layoutX="418.0" layoutY="109.0" text="Label" />
+      <Label fx:id="chi_tiet_cu" layoutX="418.0" layoutY="156.0" text="Label" />
+      <Label fx:id="dia_diem_cu" layoutX="418.0" layoutY="200.0" text="Label" />
+      <Label fx:id="time_cu" layoutX="418.0" layoutY="246.0" text="Label" />
+      <DatePicker fx:id="time" layoutX="204.0" layoutY="241.0" prefHeight="31.0" prefWidth="187.0" />
+      <ComboBox fx:id="dia_diem" layoutX="207.0" layoutY="195.0" prefHeight="31.0" prefWidth="187.0" />
+      <Text layoutX="90.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text layoutX="90.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sửa ảnh:" />
+      <Button fx:id="anh" layoutX="204.0" layoutY="284.0" mnemonicParsing="false" text="Chọn ảnh" />
+      <Label fx:id="link" layoutX="418.0" layoutY="290.0" text="Label" />
+   </children>
+</AnchorPane>

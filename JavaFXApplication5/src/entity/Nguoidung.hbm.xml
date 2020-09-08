@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jul 9, 2020 4:09:43 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Nguoidung" table="nguoidung" catalog="ungdung" optimistic-lock="version">
+        <id name="userName" type="string">
+            <column name="UserName" />
+            <generator class="assigned" />
+        </id>
+        <property name="tenUser" type="string">
+            <column name="TenUser" not-null="true" />
+        </property>
+        <property name="pass" type="string">
+            <column name="Pass" not-null="true" />
+        </property>
+        <property name="email" type="string">
+            <column name="email" not-null="true" />
+        </property>
+        <property name="tinhTrang" type="boolean">
+            <column name="tinhTrang" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
